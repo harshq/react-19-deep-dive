@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">React 19: Deep dive</h1>
         <section className="mt-6">
           <ul className="list-disc ml-4">
-            <li><Link href={`/use-hook-examples`} className="underline decoration-slate-400 decoration-dashed"><code className="bg-slate-100">use</code> API example</Link> (<a href="#" className="text-blue-700 underline decoration-dashed">blog post</a>)</li>
+            <li><Link href={`/use-examples`} className="underline decoration-slate-400 decoration-dashed"><code className="bg-slate-100">use</code> API example</Link> (<a href="#" className="text-blue-700 underline decoration-dashed">blog post</a>)</li>
           </ul>
         </section>
       </div>

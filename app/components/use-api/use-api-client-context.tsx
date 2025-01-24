@@ -4,7 +4,7 @@ import React, { use } from 'react'
 import ExampleSection from '../shared/ExampleSection';
 import { ThemeContext } from './themeContext';
 
-const UseHookClientContext: React.FC = () => {
+const UseApiClientContext: React.FC = () => {
     const theme = use(ThemeContext)
     return (
         <ExampleSection>
@@ -12,4 +12,4 @@ const UseHookClientContext: React.FC = () => {
         </ExampleSection>
     );
 }
-export default UseHookClientContext;
+export default UseApiClientContext;

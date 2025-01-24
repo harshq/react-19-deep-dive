@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react'
-import UseHookClientComponent from './use-hook-client-component';
+import UseApiClientComponent from './use-api-client-component';
 import ErrorBoundary from './ErrorBoundry';
 import ExampleSection from '../shared/ExampleSection';
 
-const UseHookServerComponent: React.FC = () => {
+const UseApiServerComponent: React.FC = () => {
     // promise is created on the server component
     const promise = fetch(`https://jsonplaceholder.typicode.com/posts/1`, { cache: 'no-store' }).then(res => res.json())
     return (
@@ -16,10 +16,10 @@ const UseHookServerComponent: React.FC = () => {
 
             <ErrorBoundary>
                 <Suspense fallback={<p>Streaming data...</p>}>
-                    <UseHookClientComponent data={promise} />
+                    <UseApiClientComponent data={promise} />
                 </Suspense>
             </ErrorBoundary>
         </ExampleSection>
     );
 }
-export default UseHookServerComponent
+export default UseApiServerComponent
